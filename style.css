@@ -552,3 +552,16 @@ body {
     }
 }
 
+/* Scroll animations */
+.section-content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.section-content.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
