@@ -332,3 +332,63 @@ body {
     display: block;
 }
 
+/* Gallery Grid */
+.gallery-grid {
+    padding: 8rem 0;
+    background: var(--beige);
+}
+
+.gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--text-dark);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.grid-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.image-placeholder.small {
+    height: 300px;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-text {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
