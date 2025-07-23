@@ -219,3 +219,116 @@ body {
 .petal-3 { top: 30%; left: 70%; animation-delay: 2s; }
 .petal-4 { top: 80%; left: 20%; animation-delay: 3s; }
 .petal-5 { top: 40%; left: 90%; animation-delay: 4s; }
+
+
+/* Content Sections */
+.about-section,
+.gallery-section,
+.services-section {
+    padding: 8rem 0;
+    position: relative;
+}
+
+.about-section {
+    background: linear-gradient(135deg, var(--beige) 0%, var(--pastel-pink) 100%);
+}
+
+.gallery-section {
+    background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--peach) 100%);
+}
+
+.services-section {
+    background: linear-gradient(135deg, var(--sky-blue) 0%, var(--soft-lavender) 100%);
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.section-content.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-content.reverse .text-content {
+    order: 2;
+}
+
+.section-content.reverse .image-container {
+    order: 1;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+.section-description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, var(--pastel-pink), var(--soft-lavender));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder::before {
+    content: ' ';
+    font-size: 3rem;
+    opacity: 0.3;
+    position: absolute;
+    animation: pulse 2s infinite;
+}
+
+.poetry-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+}
+
+.image-container:hover .poetry-overlay {
+    transform: translateY(0);
+}
+
+.poetry-text {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
+
