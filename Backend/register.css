@@ -1,0 +1,180 @@
+/* Floral Background & Typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* Card */
+.login-container {
+  backdrop-filter: blur(12px);
+  background: #eee4e4d9;
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(100, 50, 50, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Brand Title */
+.brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #4A4A4A;
+  margin-bottom: 0.5rem;
+  transition: font-size 0.3s ease;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #5f3d3d;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  transition: font-size 0.3s ease;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dcbec4;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #fff7f7;
+  transition: all 0.3s ease;
+}
+
+/* Button */
+.btn {
+  padding: 0.9rem 2rem;
+  background-color: #e4a6ae;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  transition: background-color 0.3s, padding 0.3s, font-size 0.3s;
+  display: block;
+  margin: 1rem auto 0 auto; 
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: #c9828e;
+}
+
+/* Divider */
+.divider {
+  margin: 1rem 0;
+  color: #8b5a5a;
+  font-size: 0.9rem;
+  transition: font-size 0.3s ease;
+}
+
+
+
+/* Switch to Login */
+.switch-text {
+  margin-top: 1.5rem;
+  color: #744848;
+  font-size: 0.9rem;
+  transition: font-size 0.3s ease;
+}
+
+.switch-text a {
+  color: #a8516e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Smooth Shrinking */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 320px;
+  }
+
+  .brand-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .btn,
+  .google-btn {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .divider,
+  .switch-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .brand-title {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  input {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .btn,
+  .google-btn {
+    padding: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .divider,
+  .switch-text {
+    font-size: 0.8rem;
+  }
+}
+
+.messageDiv{
+    background-color: hsl(327,90%,28%);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | Petals & Poetry</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="login.css" />
+
+  
+  <script type="module" src="firebaseauth.js" defer></script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="form-box">
+      <h1 class="brand-title">Petals & Poetry</h1>
+      <p class="subtitle">Welcome back to your floral escape 🌸</p>
+
+      <form id="loginForm" method="post">
+        <!-- Message Div for Login Errors/Success -->
+        <div id="LoginMessage" class="messageDiv" style="display:none;"></div>
+
+        <!-- Input Fields -->
+        <input type="email" placeholder="Email address" id="email" required />
+        <input type="password" placeholder="Password" id="password" required />
+
+        <!-- Login Button -->
+        <button type="submit" class="btn">Login</button>
+
+
+
+        <!-- Switch to Register -->
+        <p class="switch-text">
+          Don't have an account?
+          <a href="register.html">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
