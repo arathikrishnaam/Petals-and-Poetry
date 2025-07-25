@@ -563,4 +563,11 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+.image-placeholder.small {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
 
